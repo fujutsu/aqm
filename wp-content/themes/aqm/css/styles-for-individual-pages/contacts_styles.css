@@ -1,0 +1,55 @@
+@media all and (min-width: 1001px) {
+	.header_right {
+		background-color: rgba(0, 0, 0, 0.1);
+		position: relative;
+	}
+	.angle {
+		position: absolute;
+		left: -60px;
+		width: 60px;
+		height: 106px;
+		background-color: transparent;
+		overflow: hidden;
+	}
+	.angle:before {
+		background-color: rgba(0, 0, 0, 0.1);
+		content: '';
+		position: absolute;
+		left: 30px;
+		top: 0;
+		
+		background-color: rgba(0, 0, 0, 0.1);
+		height: 106px;
+		width: 106px;
+		transform: skewX(-30deg);
+		
+	}
+	.header .header_right nav ul li {
+		position: relative;
+	}
+	.header .header_right nav ul li:hover:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		border-top: 14px solid #000;
+	}
+	.figure_wrapper {
+		height: 100vh;
+		min-height: 850px;
+		position: absolute;
+		left:0;
+		right:0;
+	}
+	footer {
+		position: absolute;
+		bottom: 0;
+	}
+	
+}
+
+header {
+	position: relative;
+}
+@media all and (max-height: 750px) {footer {position:relative}}
